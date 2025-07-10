@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- box layout -->
+        <div class="box">
+            <img src="images/box.svg" alt="box">
+        </div>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="container home-content">
+                <img src="images/mypic2.jpg" alt="My Profile Picture" class="profile-pic">
+                <div class="text-content">
+                    <div class="welcome-text">
+                        <h1>Welcome to my <span id="typed-text"></span><span id="cursor">|</span></h1>
+                    </div>
+                    <p>CREATIVE WEB DEVELOPER</p>
+                    <!-- Social Icons in Nav -->
+                    <div class="social-icons">
+                        <a href="https://github.com/Arnob-Biswas" target="_blank">
+                            <img src="images/github.png" alt="GitHub" class="icon">
+                        </a>
+                        <a href="http://www.linkedin.com/in/arnobbiswas" target="_blank">
+                            <img src="images/linkdien.png" alt="LinkedIn" class="icon">
+                        </a>
+                        <a href="https://www.instagram.com/mrina_l_16" target="_blank">
+                            <img src="images/instagram.png" alt="Instagram" class="icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- love to do -->
+        <h2 class="what-drives-me-heading sub-heading">What Drives Me </h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="img-holder"><img src="images/coding.png" alt="Competitive Coding"></div>
+                <div class="card-content">
+                    <h2 class="ability-heading">Competitive Coding</h2>
+                    <p>Solving problems, DSA, and algorithm challenges.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-holder"><img src="images/fronted.svg" alt="Frontend Development"></div>
+                <div class="card-content">
+                    <h2 class="ability-heading">Web Dev</h2>
+                    <p>Building modern web experiences with HTML, CSS & JS and many more.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-holder"><img src="images/ui_design.svg" alt="UI Design"></div>
+                <div class="card-content">
+                    <h2 class="ability-heading">UI Design</h2>
+                    <p>Crafting user-friendly and aesthetic interfaces.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2 class="sub-heading">About Me</h2>
+                <p>
+                    Hi, I'm <strong>Mrinal Daharia</strong>, a self-taught, passionate web developer from India.
+                    I'm currently pursuing my <strong>Bachelor's in Computer Applications (BCA)</strong> and have been
+                    building for the web since I started exploring technology.
+                    Over time, I have worked on various <strong>web projects</strong> and developed a deep understanding
+                    of <strong>HTML, CSS, JavaScript</strong>, and modern front-end development.
+                </p>
+                <br>
+                <p>
+                    I have a strong passion for UI/UX design and love crafting smooth, delightful user experiences.
+                    I also enjoy contributing to open-source projects, constantly improving my skills, and learning new
+                    technologies.
+                    My work focuses on writing clean, maintainable code while staying up-to-date with the latest
+                    industry trends.
+                </p>
+            </div>
+        </section>
+
+        <!-- github stats section -->
+        <section id="projects">
+            <div id="box">
+                <h2 class="sub-heading">Projects</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img-holder"><img src="images/coding.png" alt="Competitive Coding"></div>
+                        <div class="card-content">
+                            <h2 class="ability-heading">Banking System</h2>
+                            <p>Solving problems, DSA, and algorithm challenges.</p>
+                            <a href="https://github.com/Arnob-Biswas" target="_blank">
+                                <img src="images/github.png" alt="GitHub" class="icon gitlink">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img-holder"><img src="images/fronted.svg" alt="Frontend Development"></div>
+                        <div class="card-content">
+                            <h2 class="ability-heading">Password Manager</h2>
+                            <p>Store encrypted passwords using cryptography library.</p>
+                            <a href="https://github.com/Arnob-Biswas" target="_blank">
+                                <img src="images/github.png" alt="GitHub" class="icon gitlink">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img-holder"><img src="images/ui_design.svg" alt="UI Design"></div>
+                        <div class="card-content">
+                            <h2 class="ability-heading">Snake Game</h2>
+                            <p>Using pygame to build the classic snake game.</p>
+                            <a href="https://github.com/Arnob-Biswas" target="_blank">
+                                <img src="images/github.png" alt="GitHub" class="icon gitlink">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div>
+                <h2 class="sub-heading">Connect With Us</h2>
+                <form id="feedback">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="E.g. Ronny">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="E.g. abc@gmail.com">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Your message here!"></textarea>
+                    <button type="submit" class="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="texteffect.js"></script>
+</body>
+
+</html>

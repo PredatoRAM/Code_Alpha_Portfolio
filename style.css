@@ -1,0 +1,318 @@
+/* Prevent Autofill Changing Background to White */
+input:-webkit-autofill, 
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+textarea:-webkit-autofill, 
+textarea:-webkit-autofill:hover, 
+textarea:-webkit-autofill:focus, 
+select:-webkit-autofill, 
+select:-webkit-autofill:hover, 
+select:-webkit-autofill:focus 
+{
+    background-color: #1f1f1f !important; 
+    color: #fff !important;  
+    -webkit-text-fill-color: #fff !important; 
+    transition: background-color 5000s ease-in-out 0s; 
+}
+
+/* common Sections ofr all */
+section {    
+    padding: 100px 20px;
+    /* min-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* common Sections ofr all */
+#home {    
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+    width: 12px; /* Increased width */
+}
+
+/* Scrollbar Thumb (the moving part) */
+::-webkit-scrollbar-thumb {
+    background: #c4afb7; /* Black scrollbar thumb */
+}
+
+/* Scrollbar Track Background */
+::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, #050505, #0a0a0a);
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #bbbaba;
+    /* background: linear-gradient(180deg, #050505, #0a0a0a); */
+    background-color: #171616;
+    overflow: hidden auto;  
+}
+
+/* Navigation */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(15, 15, 15, 0.9);
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    -webkit-backdrop-filter:blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 10px 0;
+}
+/* Navigation Bar Layout */
+.nav-container {
+    display: flex;
+    align-self: center;
+    justify-self:center;
+    padding:10px 0;
+    /* background-color: red; */
+}
+/* Centered Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin:  auto;
+    gap: 20px;
+}
+/* nav anchor */
+.nav-links li a {
+    text-decoration: none;
+    /* color: #c4afb7; */
+    color: #923557;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+/* Glowing Effect on Hover */
+.nav-links li a:hover {
+    color: #900f3e;
+    text-shadow: 0 0 7px #923557, 0 0 7px #923557;
+}
+
+/* Profile Picture on the Left */
+.profile-pic {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease-in-out;
+}
+/* box layout */
+.box {
+    position: fixed;
+    top: -50vh;
+    right: -30vw;
+    width: 80vw;
+    max-width: 900px;
+    rotate: 70deg;
+    transform: scale(2.5);
+    border-radius: 15px;
+    z-index: -10;
+    pointer-events: none; /* so it never blocks clicks */
+}
+/* Home Section Layout */
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    max-width: 1200px;
+    width: 100%;
+}
+/* Text on the Right */
+.text-content {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.text-content h1 {
+    font-size: 36px;
+    color: #900f3e;
+}
+.text-content p {
+    font-size: 18px;
+    color: #923557;
+}
+/* Social Icons at home */
+.social-icons {
+    display: flex;  
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px; 
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    /* border-radius: 50%; */
+    aspect-ratio: 16/9;
+    background: transparent;
+    /* filter: brightness(0) invert(1);  */
+    filter: brightness(0) saturate(100%) invert(13%) sepia(74%) saturate(3426%) hue-rotate(321deg) brightness(81%) contrast(89%);
+}
+
+/* what drives me heading */
+.what-drives-me-heading
+{
+    text-align: center;
+    padding-bottom: 20px;
+    /* color: #c4afb7; */
+}
+/* love to do card */
+.card-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.card {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    width: 40px;
+    height: 40px;
+}
+.img-holder
+{
+    display: flex;
+    padding: 10px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: #c4afb7;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+}
+.card-content {
+    padding: 8px;
+    color: #923557;
+}
+.card h2 {
+    font-size: 14px;
+    color: rgb(234, 232, 232);
+    margin: 5px 0;
+}
+.card p {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* About Section container  */
+.container {
+    text-align: center;
+    max-width: 1100px;
+    width: 100%;
+    padding: 20px;
+    color: #923557;
+}
+
+#box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+}
+#github 
+{
+    display: flex;
+    flex-direction: column;
+}
+.github-stats
+{
+    /* transform: scale(2) */
+}
+
+.sub-heading
+{
+    font-size: 1.8rem;
+    word-spacing: 5px;
+    color: #900f3e;
+}
+
+/* contact section */
+#contact
+{
+    text-align: center;
+}
+/* form */
+#feedback
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 30px;
+    gap: 10px;
+}
+input,textarea,.submit{
+    padding: 15px;
+    width: 600px;
+    border-radius: 10px;
+    border: none;
+    color: snow;
+    background-color: #1f1f1f;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+}
+.submit
+{
+    width: 300px;
+    color: #923557;
+}
+label
+{
+    font-size: 1.4rem;
+    text-align: left;
+    width: 600px;
+    color: #923557;
+}
+textarea
+{
+    height: 400px;
+    width: 600px;
+}
+
+.ability-heading
+{
+    /* color: #bbbaba !important; */
+    color:#923557 !important;
+}
+
+.gitlink
+{
+    margin-top: 10px;
+    filter: invert(70%) sepia(10%) saturate(300%) hue-rotate(300deg);
+}
+
