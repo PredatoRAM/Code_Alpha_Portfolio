@@ -40,7 +40,7 @@ section {
 
 /* Scrollbar Thumb (the moving part) */
 ::-webkit-scrollbar-thumb {
-    background: #c4afb7; /* Black scrollbar thumb */
+    background: #d2be98; /* Black scrollbar thumb */
 }
 
 /* Scrollbar Track Background */
@@ -58,7 +58,7 @@ section {
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #bbbaba;
+    color: #d2be98;
     /* background: linear-gradient(180deg, #050505, #0a0a0a); */
     background-color: #171616;
     overflow: hidden auto;  
@@ -96,7 +96,7 @@ header {
 .nav-links li a {
     text-decoration: none;
     /* color: #c4afb7; */
-    color: #923557;
+    color: #d2be98;
     font-size: 18px;
     padding: 10px 15px;
     border-radius: 6px;
@@ -104,8 +104,8 @@ header {
 }
 /* Glowing Effect on Hover */
 .nav-links li a:hover {
-    color: #900f3e;
-    text-shadow: 0 0 7px #923557, 0 0 7px #923557;
+    color: #a5803c;
+    text-shadow: 0 0 7px #d2be98, 0 0 7px #d2be98;
 }
 
 /* Profile Picture on the Left */
@@ -147,11 +147,11 @@ header {
 
 .text-content h1 {
     font-size: 36px;
-    color: #900f3e;
+    color: #a5803c;
 }
 .text-content p {
     font-size: 18px;
-    color: #923557;
+    color: #d2be98;
 }
 /* Social Icons at home */
 .social-icons {
@@ -168,7 +168,7 @@ header {
     aspect-ratio: 16/9;
     background: transparent;
     /* filter: brightness(0) invert(1);  */
-    filter: brightness(0) saturate(100%) invert(13%) sepia(74%) saturate(3426%) hue-rotate(321deg) brightness(81%) contrast(89%);
+    filter: invert(24%) sepia(83%) saturate(558%) hue-rotate(10deg) brightness(91%) contrast(96%);
 }
 
 /* what drives me heading */
@@ -210,14 +210,14 @@ header {
     border-radius: 50%;
     width: 80px;
     height: 80px;
-    background-color: #c4afb7;
+    background-color: #d2be98;
     justify-self: center;
     align-items: center;
     justify-content: center;
 }
 .card-content {
     padding: 8px;
-    color: #923557;
+    color: #d2be98;
 }
 .card h2 {
     font-size: 14px;
@@ -235,7 +235,7 @@ header {
     max-width: 1100px;
     width: 100%;
     padding: 20px;
-    color: #923557;
+    color: #a5803c;
 }
 
 #box{
@@ -258,7 +258,7 @@ header {
 {
     font-size: 1.8rem;
     word-spacing: 5px;
-    color: #900f3e;
+    color: #a5803c;
 }
 
 /* contact section */
@@ -289,14 +289,14 @@ input,textarea,.submit{
 .submit
 {
     width: 300px;
-    color: #923557;
+    color: #d2be98;
 }
 label
 {
     font-size: 1.4rem;
     text-align: left;
     width: 600px;
-    color: #923557;
+    color: #d2be98;
 }
 textarea
 {
@@ -307,12 +307,12 @@ textarea
 .ability-heading
 {
     /* color: #bbbaba !important; */
-    color:#923557 !important;
+    color:#d2be98 !important;
 }
 
 .gitlink
 {
     margin-top: 10px;
-    filter: invert(70%) sepia(10%) saturate(300%) hue-rotate(300deg);
+    filter: invert(24%) sepia(83%) saturate(558%) hue-rotate(10deg) brightness(91%) contrast(96%);
 }
 
